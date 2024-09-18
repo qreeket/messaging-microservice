@@ -18,6 +18,7 @@ func InitServer() {
 
 	// register the grpc server for reflection
 	reflection.Register(s)
+	// @todo -register service here
 
 	// get the port number from .env file
 	port, _ := strconv.Atoi(os.Getenv("PORT"))
